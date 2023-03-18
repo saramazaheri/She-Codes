@@ -98,5 +98,20 @@
         <strong>Sara Mazaheri </strong>
       </p>
     </div>
+    <script>
+      function morelemon() {
+        let likelemon = prompt("Do you like lemon?");
+        let checkh1 = alert("Check the Title:)");
+        let heading = document.querySelector("h1");
+
+        if (likelemon >= "yes") {
+          heading.innerHTML = "😄lemon fans!";
+        } else {
+          heading.innerHTML = "☹️You can try lemon once!";
+        }
+      }
+      let lemonButton = document.querySelector("button");
+      lemonButton.addEventListener("click", morelemon);
+    </script>
   </body>
 </html>
